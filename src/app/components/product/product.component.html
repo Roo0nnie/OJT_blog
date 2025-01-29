@@ -1,0 +1,28 @@
+<div class="p-6">
+  <h2>Product List</h2>
+
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search product..."
+    (input)="getProducts()"
+  />
+
+  <ul>
+    <li *ngFor="let product of products">
+      <strong>{{ product.product }}</strong> - ${{ product.price }}
+      <button (click)="updateProduct(product)">Update Price</button>
+      <button (click)="deleteProduct(product.id)">Delete</button>
+    </li>
+  </ul>
+
+  <h3>Add Product</h3>
+  <input type="text" [(ngModel)]="newProduct.product" placeholder="Name" />
+  <input type="number" [(ngModel)]="newProduct.price" placeholder="Price" />
+  <input
+    type="text"
+    [(ngModel)]="newProduct.description"
+    placeholder="Description"
+  />
+  <button (click)="addProduct()">Add</button>
+</div>
