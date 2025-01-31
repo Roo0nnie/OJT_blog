@@ -17,8 +17,8 @@ export class NavComponent {
     'Experiences',
     'Projects',
     'Contacts',
-    'Tests',
-    'Products',
+    'Test',
+    'Todo',
   ];
 
   getRoute(navList: string): string {
