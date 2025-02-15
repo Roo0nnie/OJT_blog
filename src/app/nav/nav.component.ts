@@ -17,7 +17,6 @@ export class NavComponent {
     'Experiences',
     'Projects',
     'Contacts',
-    'Test',
     'Todo',
   ];
 
