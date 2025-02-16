@@ -11,14 +11,7 @@ import { RouterModule, Router } from '@angular/router';
 export class NavComponent {
   constructor(private router: Router) {}
 
-  navList: string[] = [
-    'Home',
-    'About',
-    'Experiences',
-    'Projects',
-    'Contacts',
-    'Todo',
-  ];
+  navList: string[] = ['HOME', 'ABOUT', 'COMPANY'];
 
   getRoute(navList: string): string {
     return '/' + navList.toLowerCase();

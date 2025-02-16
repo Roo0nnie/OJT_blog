@@ -9,6 +9,21 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  imageHome: string = 'imgs/home.png';
-  imageAbout: string = 'imgs/about.png';
+  imageHome: string = 'assets/imgs/home.png';
+  imageAbout: string = 'assets/imgs/about.png';
+  imgBG: string = 'assets/svg/bg.svg';
+
+  openModal() {
+    const modal = document.getElementById('flowbiteModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
+  }
+
+  closeModal() {
+    const modal = document.getElementById('flowbiteModal');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
 }

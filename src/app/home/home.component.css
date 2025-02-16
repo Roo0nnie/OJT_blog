@@ -1,3 +1,51 @@
-.header-text-color {
-  color: #eb7751;
+/* weekly image */
+.box-image {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.image-gallery {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box-image:hover .image-gallery {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+.image-gallery-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* From bottom show upward */
+  width: 100%;
+  background: var(--main-color-dklight);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.box-image:hover .image-gallery-container {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.text-color {
+  color: var(--main-color-dklight);
+}
+
+.b-dark {
+  border: 3px solid var(--main-color-dklight);
+  background-color: var(--main-color-dklight);
+}
+
+.b-light {
+  border: 3px solid white;
 }
