@@ -6,9 +6,20 @@
 
 :root {
   --main-color-light: #0272b2;
-  --main-color-mdlight: #00005a;
-  --main-color-dklight: #000154;
+  --main-color-mdlight: #6138de;
+  --main-color-dklight: #431eb1;
   --light-gray: #edf5fa;
+}
+
+.b-dark {
+  background-color: var(--main-color-dklight);
+}
+
+.b-light {
+  background-color: var(--light-gray);
+}
+.bg-bg-main {
+  background-color: var(--light-gray);
 }
 
 .text-color {

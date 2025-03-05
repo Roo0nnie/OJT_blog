@@ -11,11 +11,12 @@
   display: block;
   width: 100%;
   border-radius: 10px;
+  filter: brightness(70%);
 }
 
 .box-image:hover .image-gallery {
   transform: scale(1.1);
-  filter: brightness(70%);
+  filter: brightness(100%);
 }
 
 .image-gallery-container {
@@ -48,35 +49,4 @@
 
 .b-light {
   border: 3px solid white;
-}
-
-/* Animation Scroll Effect */
-.stock-sticker {
-  font-size: 15px;
-  padding-block: 8px;
-  display: flex;
-  overflow: hidden;
-  user-select: none;
-  --gap: 20px;
-  gap: var(--gap);
-  position: relative;
-  white-space: nowrap;
-}
-
-.stock-sticker ul {
-  list-style: none;
-  display: flex;
-  gap: var(--gap);
-  align-items: center;
-  flex-shrink: 0;
-  animation: scroll 20s linear infinite;
-}
-
-.stock-sticker img {
-  height: 200px;
-}
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
 }

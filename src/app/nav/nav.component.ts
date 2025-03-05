@@ -18,6 +18,9 @@ export class NavComponent {
   }
 
   isActive(navItem: string): boolean {
+    if (this.router.url === '/week-1' && navItem.toLowerCase() === 'home') {
+      return true;
+    }
     return this.router.url === this.getRoute(navItem);
   }
 }
