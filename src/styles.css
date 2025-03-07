@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "flowbite/dist/flowbite.min.css";
-
 :root {
   --main-color-light: #0272b2;
   --main-color-mdlight: #6138de;

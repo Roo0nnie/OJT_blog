@@ -9,18 +9,21 @@ import { RouterModule, Router } from '@angular/router';
   styleUrl: './nav.component.css',
 })
 export class NavComponent {
+  navList: string[] = ['HOME', 'ABOUT', 'COMPANY', 'WEEK'];
+  weekList: string[] = ['Week-1', 'Week-2', 'Week-3']; // Dropdown items
+  isDropdownOpen = false;
+
   constructor(private router: Router) {}
 
-  navList: string[] = ['HOME', 'ABOUT', 'COMPANY'];
-
-  getRoute(navList: string): string {
-    return '/' + navList.toLowerCase();
+  getRoute(navItem: string): string {
+    return '/' + navItem.toLowerCase().replace(/\s+/g, '-');
   }
 
   isActive(navItem: string): boolean {
-    if (this.router.url === '/week-1' && navItem.toLowerCase() === 'home') {
-      return true;
-    }
     return this.router.url === this.getRoute(navItem);
+  }
+
+  toggleDropdown(): void {
+    this.isDropdownOpen = !this.isDropdownOpen;
   }
 }

@@ -15,29 +15,55 @@
       >
     </a>
 
-    <!-- Center: Navbar Menu (hidden on small screens) -->
     <div class="hidden md:flex md:items-center md:space-x-8 md:order-1">
       <ul
-        *ngFor="let navItem of navList"
-        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+        class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
       >
-        <li class="mx-3 poppins-semibold">
-          <a
-            [routerLink]="getRoute(navItem)"
-            routerLinkActive="active"
-            class="nav-link"
-            [ngClass]="{
-              'text-blue-700': isActive(navItem),
-              ' text-black': !isActive(navItem)
-            }"
-          >
-            {{ navItem }}
-          </a>
+        <li
+          *ngFor="let navItem of navList"
+          class="relative mx-3 poppins-semibold"
+        >
+          <ng-container *ngIf="navItem !== 'WEEK'; else weekDropdown">
+            <a
+              [routerLink]="getRoute(navItem)"
+              routerLinkActive="active"
+              class="nav-link"
+              [ngClass]="{
+                'text-blue-700': isActive(navItem),
+                'text-black': !isActive(navItem)
+              }"
+            >
+              {{ navItem }}
+            </a>
+          </ng-container>
+
+          <ng-template #weekDropdown>
+            <button
+              class="nav-link gap-1 text-white font-semibold b-dark hover:b-light focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 rounded-md text-sm py-3 px-7 text-center inline-flex items-center me-2 mb-2"
+              (click)="toggleDropdown()"
+            >
+              WEEK Blog
+              <span [ngClass]="{ 'rotate-180': isDropdownOpen }">▼</span>
+            </button>
+
+            <ul
+              *ngIf="isDropdownOpen"
+              class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg"
+            >
+              <li *ngFor="let week of weekList">
+                <a
+                  [routerLink]="getRoute(week)"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                >
+                  {{ week }}
+                </a>
+              </li>
+            </ul>
+          </ng-template>
         </li>
       </ul>
     </div>
 
-    <!-- Right: Mobile Menu Toggle -->
     <div class="md:hidden flex items-center">
       <button
         data-collapse-toggle="navbar-cta"
