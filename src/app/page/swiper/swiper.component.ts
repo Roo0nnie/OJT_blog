@@ -1,6 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-swiper',
