@@ -10,4 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class ChallengesComponent {
   homeBG: string = 'assets/svg/2.svg';
+  installError: string = 'assets/svg/install_error.svg';
+  timeManagement: string = 'assets/svg/time_management.svg';
+  pageError: string = 'assets/svg/page_error.svg';
+  serverError: string = 'assets/svg/server_error.svg';
 }
