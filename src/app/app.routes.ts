@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { CompanyComponent } from './company/company.component';
 import { Weekly1Component } from './weekly1/weekly1.component';
 import { Week3Component } from './week-3/week-3.component';
+import { Week4Component } from './week-4/week-4.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'company', component: CompanyComponent },
   { path: 'week-1', component: Weekly1Component },
   { path: 'week-3', component: Week3Component },
+  { path: 'week-4', component: Week4Component },
 ];

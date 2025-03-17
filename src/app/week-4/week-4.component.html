@@ -18,7 +18,7 @@
 
 <div class="max-w-screen-xl mx-auto mt-14">
   <div class="text-5xl font-bold mb-3 poppins-semibold">
-    Week 3 : A Quick Shift to a <span class="text-color"> New System </span>
+    Week 4 : A Continuation Task: A <span class="text-color">NearbyTask </span>
   </div>
   <div class="flex mt-10">
     <div class="font-bold poppins-light">FEBRUARY 22 - FEBRUARY 28</div>
@@ -29,36 +29,93 @@
 
 <div class="">
   <div class="max-w-screen-xl flex items-center justify-between mx-auto">
-    <div class="grid grid-cols-2 items-center">
+    <div class="">
       <div>
-        <h1 class="text-5xl font-bold mb-3 poppins-semibold text-color">
+        <h1 class="text-5xl font-bold mb-5 poppins-semibold text-color">
           Introduction
         </h1>
-        <p class="my-6 poppins-light">
-          Week three of my On-the-Job Training (OJT) was both exciting and
-          nerve-wracking. Our team had to present a new system we planned to
-          develop during OJT. The challenge was to create something simple yet
-          useful and challenge-friendly.
-        </p>
-        <p class="my-6 poppins-light t">
-          We decided on NearByTask, a mobile platform designed for TESDA
-          graduates to find job opportunities by completing client-posted tasks.
-          Our goal was to create a system that generates income, but it wasn’t
-          an easy decision. The project involved multiple modules and features,
-          and we were assigned to build it using Flutter (for mobile) and
-          Angular (for the admin panel)—two technologies we had no prior
-          experience with.
-        </p>
-        <p class="my-6 poppins-light">
-          This week, our main focus was to ensure the system’s feasibility and
-          start coding the front-end.
-        </p>
-      </div>
-      <div class="h-auto max-w-full justify-center flex">
-        <img src="{{ homeBG }}" alt="" srcset="" style="height: 500px" />
+        <div class="grid grid-cols-2 gap-10">
+          <div
+            class="card shadow-lg flex justify-center items-center bg-bg-main"
+          >
+            <div class="items-center">
+              <div class="py-4 px-8">
+                <p class="my-6 poppins-light text-sm">
+                  Week 4 was another exhausting yet productive week, as it
+                  involved the development of key system modules. One of my
+                  primary tasks was working on the Admin Panel and User
+                  Management. This included implementing Create, Read, Update,
+                  Delete, and Search (CRUDS) operations, which are fundamental
+                  in any system for dynamic and manageable data.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-lg flex justify-center items-center">
+            <div class="items-center">
+              <div class="py-4 px-8">
+                <p class="my-6 poppins-light text-sm">
+                  I began by developing the Create operation, allowing admins to
+                  create new moderator accounts by entering their information.
+                  The Read operation was designed to fetch data from a specific
+                  table, enabling both admins and moderators to view user
+                  details. The Update operation allowed dynamic changes in user
+                  status based on activity, while the Disable function
+                  restricted inactive users from interacting with the system.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-lg flex justify-center items-center">
+            <div class="items-center">
+              <div class="py-4 px-8">
+                <p class="my-6 poppins-light text-sm">
+                  In addition to backend development using Express.js, I also
+                  took charge of designing an interactive and responsive User
+                  Management interface for the frontend. However, CRUD
+                  operations alone were not enough for efficient user
+                  management. To enhance functionality, I integrated search and
+                  filter features. The search function allows admins and
+                  moderators to quickly find users by name, email, account
+                  status, or active status. Similarly, the filter function
+                  includes pagination, status filtering, and list customization,
+                  making navigation more efficient. Since the CRUD operations
+                  for User Management were successfully implemented, I realized
+                  that applying the same logic to other modules—such as Task
+                  Management and User Communication—would be much easier.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card shadow-lg flex justify-center items-center bg-bg-main"
+          >
+            <div class="items-center">
+              <div class="py-4 px-8">
+                <p class="my-6 poppins-light text-sm">
+                  With this progress, I moved on to the Admin and Moderator
+                  Login System, a crucial feature ensuring data security and
+                  preventing unauthorized access. I developed this functionality
+                  by implementing user sessions, which are stored in local
+                  storage. This ensures that the admin or moderator remains
+                  logged in even after a page reload and only gets logged out
+                  upon clicking the "Logout" button, which destroys the session.
+                  Developing this feature took me two days to fine-tune
+                  according to my requirements. Lastly, I worked on exporting
+                  data to PDF by integrating the jspdf library via npm, allowing
+                  admins and moderators to generate downloadable reports.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <!--  -->
   <div class="bg-bg-main my-10">
     <div class="max-w-screen-xl flex items-center justify-between mx-auto">
       <div class="grid grid-cols-3 items-center mt-10 gap-10">
