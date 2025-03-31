@@ -5,22 +5,58 @@
   >
     <div class="grid grid-cols-2 items-center">
       <div class="p-6 max-w-lg">
-        <span class="block poppins-light text-xl mb-3">Come and Join!</span>
-        <h1 class="text-5xl font-bold mb-3 poppins-semibold">
+        <span class="block poppins-light text-xl mb-3 ">Come and Join!</span>
+        <h1 class="text-5xl font-bold mb-3 poppins-bold text-color">
           OJT Journey With
         </h1>
-        <span class="block mb-3 poppins-semibold text-5xl">Quanby</span>
+        <span class="block mb-3 poppins-bold text-5xl text-color">Quanby</span>
         <p class="my-6 poppins-light text-sm">
           Here is my OJT journey with some information about me and my skills.
           You can find more information about me in my portfolio.
         </p>
 
+       <div class="flex gap-5">
         <button
-          type="button"
-          class="text-white font-semibold b-dark hover:b-light focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 rounded-md text-sm py-3 px-7 text-center inline-flex items-center me-2 mb-2"
-        >
-          GET STARTED
-        </button>
+        class=" transition-all duration-300 ease-in-out text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 poppins-semibold"
+        type="button"
+      >
+        DOWNLOAD CV
+        <svg
+        class="w-5 h-5 ms-3"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" 
+        stroke-linejoin="round" 
+        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+      </button>
+      <button
+      class=" transition-all duration-300 ease-in-out text-white bg-blue-700 hover:text-blue-700 border border-transparent hover:border-blue-700 hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 poppins-semibold"
+      type="button"
+    >
+      EXPLORE
+      <svg
+        class="w-2.5 h-2.5 ms-3"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 9l4-4-4-4"
+        />
+      </svg>
+    </button>
+       </div>
       </div>
       <div class="h-auto max-w-full">
         <img src="{{ homeBG }}" alt="" srcset="" style="height: 700px" />
@@ -34,12 +70,12 @@
   <div class="max-w-screen-xl mx-auto my-20">
     <div>
       <div
-        class="card shadow-lg max-h-96 overflow-hidden flex justify-center items-center"
+        class=" max-h-96 overflow-hidden flex justify-center items-center"
       >
         <div class="grid grid-cols-2 items-center">
           <div class="py-4 px-8 max-w-xl">
-            <h1 class="text-5xl font-bold mb-3 poppins-semibold">Learning</h1>
-            <span class="block mb-3 poppins-semibold text-5xl"
+            <h1 class="text-3xl font-bold mb-3 poppins-bold text-color">Learning</h1>
+            <span class="block mb-3 poppins-bold text-3xl text-color"
               >Experiences</span
             >
             <p class="my-6 poppins-light text-sm">
@@ -47,8 +83,7 @@
               skills. You can find more information about me in my portfolio.
             </p>
             <div class="flex justify-between">
-              <a class="font-bold poppins-light" href="">FEBRUARY - MARCH</a>
-              <a class="font-bold poppins-seminbold" href=""> READ MORE </a>
+              <a class="font-bold poppins-light text-color" href="">FEBRUARY - APRIL</a>
             </div>
           </div>
           <div class="h-auto max-w-full overflow-hidden">
@@ -58,15 +93,83 @@
       </div>
 
       <!-- Swiper Weekly task -->
+      <div class="flex items-center mt-10">
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 mr-4"></div>
+        <h1 class="text-3xl font-bold poppins-bold text-color">Weekly Task</h1>
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+      </div>
       <app-swiper></app-swiper>
     </div>
 
-    <div class="bg-bg-main mt-20">
-      <div class="grid grid-cols-2 items-center">
+
+    <!--  -->
+
+    <div class="max-w-screen-xl mx-auto mt-10">
+      <div class="items-center">
+        <div >
+          <div class="flex items-center">
+            <div class="flex-grow border-t border-gray-200 dark:border-gray-700 mr-4"></div>
+            <h1 class="text-3xl font-bold poppins-bold text-color">Documentation</h1>
+            <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="">
+      <div class="grid grid-cols-2 items-center mt-10">
         <div class="px-6">
-          <span class="block poppins-light text-xl mb-3">OJT Journey: </span>
-          <h1 class="text-5xl font-bold mb-3 poppins-semibold">
-            A Thank You Note
+          <h1 class="text-3xl font-bold mb-3 poppins-bold text-color uppercase">
+            My gratitude letter
           </h1>
           <p class="my-6 poppins-light text-sm">
             My OJT journey has been an amazing experience, where I got to learn
@@ -76,9 +179,18 @@
             journey even more special. This experience has taught me a lot and
             prepared me for what’s ahead in my career.
           </p>
+          <div class="flex gap-5 mb-5">
+            <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Communication</a></button>
+            <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Collaboration</a></button>
+            <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Adaptability</a></button>
+           </div>
+           <div class="flex gap-5">
+            <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Confidence</a></button>
+            <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Growth Mindse</a></button>
+           </div>
         </div>
         <div class="h-auto max-w-full overflow-hidden">
-          <img src="{{ homeBG3 }}" alt="" srcset="" style="height: 700px" />
+          <img src="{{ homeBG3 }}" alt="" srcset="" style="height: 500px" />
         </div>
       </div>
     </div>

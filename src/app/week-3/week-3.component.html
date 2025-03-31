@@ -17,13 +17,10 @@
 </div>
 
 <div class="max-w-screen-xl mx-auto mt-14">
-  <div class="text-3xl font-bold mb-3 poppins-semibold">
-    Week 3 : A Quick Shift to a <span class="text-color"> New System </span>
+  <div class="text-3xl font-bold mb-3 poppins-bold text-color">
+    Week 3 : Shift To NearByTask
   </div>
-  <div class="flex mt-10">
-    <div class="font-bold poppins-light">FEBRUARY 17 - FEBRUARY 21</div>
-    <div class="px-10 font-bold poppins-semibold">Ronnie F. Estillero</div>
-  </div>
+  <div class="font-bold poppins-light">FEBRUARY 17 - FEBRUARY 21</div>
   <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 </div>
 
@@ -31,54 +28,171 @@
   <div class="max-w-screen-xl flex items-center justify-between mx-auto">
     <div class="grid grid-cols-2 items-center">
       <div>
-        <h1 class="text-3xl font-bold mb-3 poppins-semibold text-color">
-          Introduction
+        <h1 class="text-3xl mb-3 poppins-bold text-color">
+         {{ introduction[0].title}}
         </h1>
-        <p class="my-6 poppins-light">
-          Week three of my On-the-Job Training (OJT) was both exciting and
-          nerve-wracking. Our team had to present a new system we planned to
-          develop during OJT. The challenge was to create something simple yet
-          useful and challenge-friendly.
+        <p class="my-6 poppins-light text-sm">
+         {{ introduction[0].content}}
         </p>
-        <p class="my-6 poppins-light t">
-          We decided on NearByTask, a mobile platform designed for TESDA
-          graduates to find job opportunities by completing client-posted tasks.
-          Our goal was to create a system that generates income, but it wasn’t
-          an easy decision. The project involved multiple modules and features,
-          and we were assigned to build it using Flutter (for mobile) and
-          Angular (for the admin panel)—two technologies we had no prior
-          experience with.
+        <p class="my-6 poppins-light text-sm">
+         {{ introduction[1].content}}
         </p>
-        <p class="my-6 poppins-light">
-          This week, our main focus was to ensure the system’s feasibility and
-          start coding the front-end.
+        <p class="my-6 poppins-light text-sm">
+         {{ introduction[2].content}}
         </p>
       </div>
       <div class="h-auto max-w-full justify-center flex">
-        <img src="{{ homeBG }}" alt="" srcset="" style="height: 500px" />
+        <img src="{{ nearByTask }}" alt="" srcset="" style="height: 500px" />
       </div>
     </div>
   </div>
 
-  
-  <div class="bg-bg-main my-10">
-    <div class="max-w-screen-xl flex items-center justify-between mx-auto">
-      <div class="grid grid-cols-4 items-center mt-10 gap-10">
-        <h1 class="text-3xl font-bold mb-3 poppins-semibold">
-          Challenges <span class="text-color">and Solutions</span>
-        </h1>
-        <div class="col-span-4">
-          <div>
-            <app-challenges></app-challenges>
+      <!-- System Design -->
+      <div class="max-w-screen-xl mx-auto ">
+        <div class="items-center">
+          <div >
+            <div class="grid grid-cols-2 items-center">
+              <div class="h-auto max-w-full justify-center flex">
+                <img src="{{ systemDesign }}" alt="" srcset="" style="height: 500px" />
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold poppins-bold text-color">System Design</h1>
+                <p class="my-6 poppins-light text-sm">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, iste
+                  illum quam dignissimos ipsam voluptas vero, quidem veritatis ut
+                  vitae earum odit nobis consectetur fuga dolores unde voluptatem,
+                  nisi ad.. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem doloribus tenetur quis inventore, impedit maxime
+                  rerum nobis temporibus aperiam corporis culpa repellendus! Aut,
+                  minima iusto possimus quos repellat animi accusamus.. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. Voluptas debitis
+                  quaerat velit porro. Rem quidem aperiam voluptatem vitae dicta
+                  consequuntur qui facilis molestias ipsam repellendus. Facilis
+                  necessitatibus veritatis perspiciatis animi.
+                </p>
+                <div class="flex gap-5">
+                 <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Figma Design</a></button>
+                 <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">User Story</a></button>
+                 <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold">Diagram Link</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- System Design -->
+
+          <!-- Challenges & Solutions -->
+    <div class="max-w-screen-xl mx-auto">
+      <div class="items-center">
+        <div >
+          <div class="flex items-center">
+            <h1 class="text-3xl font-bold poppins-bold text-color">Challenges & Solutions</h1>
+            <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 justify-center max-w-4xl mx-auto">
+            <div class="card shadow-lg flex justify-center items-center">
+              <div class="items-center">
+                <div class="max-w-full overflow-hidden flex justify-center">
+                  <img
+                    src="{{ installError }}"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="py-4 px-8 flex flex-col items-center my-3">
+                  <div class="flex items-center flex-col mb-3">
+                    <h1 class="text-xl poppins-bold text-color">
+                      {{ challenges[0].title }}
+                    </h1>
+                  </div>
+                  <p class="poppins-light text-sm text-gray-600">
+                    {{ challenges[0].content }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg flex justify-center items-center">
+              <div class="items-center">
+                <div class="max-w-full overflow-hidden flex justify-center">
+                  <img
+                    src="{{ pageError }}"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="py-4 px-8 flex flex-col items-center my-3">
+                  <div class="flex items-center flex-col mb-3">
+                    <h1 class="text-xl poppins-bold text-color">
+                      {{ challenges[1].title }}
+                    </h1>
+                  </div>
+                  <p class="poppins-light text-sm text-gray-600">
+                    {{ challenges[1].content }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg flex justify-center items-center">
+              <div class="items-center">
+                <div class="max-w-full overflow-hidden flex justify-center">
+                  <img
+                    src="{{ serverError }}"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="py-4 px-8 flex flex-col items-center my-3">
+                  <div class="flex items-center flex-col mb-3">
+                    <h1 class="text-xl poppins-bold text-color">
+                      {{ challenges[2].title }}
+                    </h1>
+                  </div>
+                  <p class="poppins-light text-sm text-gray-600">
+                    {{ challenges[2].content }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg flex justify-center items-center">
+              <div class="items-center">
+                <div class="max-w-full overflow-hidden flex justify-center">
+                  <img
+                    src="{{ timeManagement }}"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="py-4 px-8 flex flex-col items-center my-3">
+                  <div class="flex items-center flex-col mb-3">
+                    <h1 class="text-xl poppins-bold text-color">
+                      {{ challenges[3].title }}
+                    </h1>
+                  </div>
+                  <p class="poppins-light text-sm text-gray-600">
+                    {{ challenges[3].content }}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="my-20">
-    <div class="max-w-screen-xl mx-auto flex items-center justify-center">
-      <div class="grid grid-cols-2 items-center gap-10">
+    <!-- challenges -->
+  
+<!--  -->
+  <div class="mt-20">
+    <div class="max-w-screen-xl mx-auto flex justify-center flex-col">
+      <div class="flex items-center">
+        <h1 class="text-3xl poppins-bold text-color">Tasks Completed</h1>
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+      </div>
+      <div class="grid grid-cols-2 items-center gap-10 mt-10">
         <div class="h-auto max-w-full justify-center flex">
           <img
             src="{{ taskCompleted }}"
@@ -89,41 +203,34 @@
         </div>
 
         <div class="">
-          <h1 class="text-3xl font-bold mb-3 poppins-semibold">
-            Tasks <span class="text-color">Completed</span>
-          </h1>
-          <p class="my-6 poppins-light">
-            Despite the hurdles, I successfully accomplished:
-          </p>
-          <ul class="my-6 poppins-light">
-            <li class="my-2">✅ Installing and setting up Angular.</li>
-            <li class="my-2">
-              ✅ Connecting the database for dynamic data handling.
-            </li>
-            <li class="my-2">✅ Implementing CRUD operations for testing.</li>
-            <li class="my-2">
-              ✅ Understanding and configuring Angular routing.
-            </li>
+          <button class="bg-bg-main text-white poppins-semibold py-2 px-4 rounded-md"> <a href="" class="text-color poppins-semibold my-6"> Despite the hurdles, I successfully accomplished:</a></button>
+          <ul class="my-6 poppins-light text-sm">
+            <li class="my-2 flex items-center"><span class="h-4 w-4 bg-bg-main inline-block mr-2"></span> Installing and setting up Angular.</li>
+            <li class="my-2 flex items-center"><span class="h-4 w-4 bg-bg-main  inline-block mr-2"></span> Connecting the database for dynamic data handling.</li>
+            <li class="my-2 flex items-center"><span class="h-4 w-4 bg-bg-main  inline-block mr-2"></span> Implementing CRUD operations for testing.</li>
+            <li class="my-2 flex items-center"><span class="h-4 w-4 bg-bg-main  inline-block mr-2"></span> Understanding and configuring Angular routing.</li>
           </ul>
         </div>
-      </div>
+      </div>  
     </div>
   </div>
 
-  <div class="bg-bg-main my-10">
+  <!--  -->
+
+  <div class=" mt-20">
     <div
-      class="max-w-screen-xl min-h-96 flex items-center justify-between mx-auto"
+      class="max-w-screen-xl min-h-96 flex flex-col mx-auto"
     >
+      <div class="flex items-center">
+        <h1 class="text-3xl poppins-bold text-color">Key Learnings</h1>
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+      </div>
       <div class="items-center">
         <div>
           <div class="grid grid-cols-2 items-center">
             <div>
-              <h1 class="text-3xl font-bold mb-3 poppins-semibold">
-                Key <span class="text-color">Learnings</span>
-              </h1>
-              <p class="my-6 poppins-light w-2/3">
-                This week, I gained hands-on experience with Angular and
-                database setup. Here are my key takeaways:
+              <p class="my-6 poppins-light w-2/3 text-sm">
+                This week, I worked with Angular and set up a database. I gained hands-on experience in both areas. Here are my key takeaways.
               </p>
             </div>
             <div class="h-auto max-w-full justify-center flex overflow-hidden">
@@ -138,47 +245,47 @@
 
           <div class="grid grid-cols-2 gap-10">
             <div>
-              <h3 class="text-xl font-bold mb-3 poppins-semibold text-color">
-                Angular Setup
+              <h3 class="text-xl poppins-bold text-color">
+                  Angular Setup
               </h3>
-              <p class="my-6 poppins-light">
+              <p class="my-6 poppins-light text-sm">
                 Installed Angular using npm install -g &#64;angular/cli and
                 created a new project.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold mb-3 poppins-semibold text-color">
+              <h3 class="text-xl poppins-bold text-color">
                 Routing in Angular
               </h3>
-              <p class="my-6 poppins-light">
+              <p class="my-6 poppins-light text-sm">
                 Set up a database in Supabase and configured it, drawing from my
                 experience with MySQL.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold mb-3 poppins-semibold text-color">
+              <h3 class="text-xl poppins-bold text-color">
                 PostgreSQL with Supabase
               </h3>
-              <p class="my-6 poppins-light">
+              <p class="my-6 poppins-light text-sm">
                 Connected Angular to Supabase by initializing its URL and key,
                 installing &#64;supabase/supabase.js, and integrating both
                 frontend and backend.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold mb-3 poppins-semibold text-color">
+              <h3 class="text-xl poppins-bold text-color">
                 Database Connection in Angular
               </h3>
-              <p class="my-6 poppins-light">
+              <p class="my-6 poppins-light text-sm">
                 As the team leader, I assigned daily tasks, checked outputs
                 before moving to the next step, and ensured steady progress.
               </p>
             </div>
             <div class="mb-10">
-              <h3 class="text-xl font-bold mb-3 poppins-semibold text-color">
+              <h3 class="text-xl poppins-bold text-color">
                 Team Leadership
               </h3>
-              <p class="my-6 poppins-light">
+              <p class="my-6 poppins-light text-sm">
                 As the team leader, I assigned daily tasks, checked outputs
                 before moving to the next step, and ensured steady progress
               </p>
@@ -190,13 +297,14 @@
   </div>
 
   <div
-    class="max-w-screen-xl min-h-96 flex items-center justify-between mx-auto"
+    class="max-w-screen-xl min-h-96 flex flex-col justify-between mx-auto mt-20"
   >
+    <div class="flex items-center">
+      <h1 class="text-3xl poppins-bold text-color">Next Week Goals</h1>
+      <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+    </div>
     <div class="items-center my-10">
       <div>
-        <h1 class="text-3xl font-bold mb-3 poppins-semibold">
-          Next Week<span class="text-color">Goals</span>
-        </h1>
         <div class="grid grid-cols-2 items-center gap-10">
           <div class="flex justify-center items-center relative">
             <img src="{{ pattern }}" alt="" style="height: 300px" />
@@ -204,13 +312,13 @@
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <div class="p-10 bg-bg-main rounded-lg shadow-lg">
-                <span class="text-lg font-bold poppins-semibold">CREATE </span>
+                <span class="text-lg poppins-bold text-color">CREATE </span>
               </div>
             </div>
           </div>
 
           <div class="">
-            <p class="my-6 poppins-light text-center">
+            <p class="my-6 poppins-light text-center text-sm">
               I will develop a new module with CRUD operations. This will allow
               for efficient data management and interaction.
             </p>
@@ -219,10 +327,9 @@
       </div>
 
       <div>
-        <h1 class="text-3xl font-bold poppins-semibold text-color"></h1>
         <div class="grid grid-cols-2 items-center gap-10">
           <div class="">
-            <p class="my-6 poppins-light text-center">
+            <p class="my-6 poppins-light text-center text-sm">
               I will complete the admin panel with data export features. This
               will make it easier to retrieve and manage important data.
             </p>
@@ -233,7 +340,7 @@
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <div class="p-10 bg-bg-main rounded-lg shadow-lg">
-                <span class="text-lg font-bold poppins-semibold">ORGANIZE</span>
+                <span class="text-lg poppins-bold text-color">ORGANIZE</span>
               </div>
             </div>
           </div>
@@ -249,7 +356,7 @@
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <div class="p-10 bg-bg-main rounded-lg shadow-lg">
-                <span class="text-lg font-bold poppins-semibold"
+                <span class="text-lg poppins-bold text-color"
                   >OPTIMIZE
                 </span>
               </div>
@@ -257,7 +364,7 @@
           </div>
 
           <div class="">
-            <p class="my-6 poppins-light text-center">
+            <p class="my-6 poppins-light  text-center text-sm">
               I will implement search and filtering for better usability. These
               features will improve navigation and user experience.
             </p>
@@ -266,10 +373,9 @@
       </div>
 
       <div>
-        <h1 class="text-3xl font-bold poppins-semibold text-color"></h1>
         <div class="grid grid-cols-2 items-center gap-10">
           <div class="">
-            <p class="my-6 poppins-light text-center">
+            <p class="my-6 poppins-light text-center text-sm">
               I will improve my debugging and problem-solving skills. This will
               help me resolve issues more efficiently.
             </p>
@@ -280,7 +386,7 @@
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <div class="p-10 bg-bg-main rounded-lg shadow-lg">
-                <span class="text-lg font-bold poppins-semibold">SOLVE </span>
+                <span class="text-lg poppins-bold text-color">SOLVE </span>
               </div>
             </div>
           </div>
@@ -288,7 +394,6 @@
       </div>
 
       <div>
-        <h1 class="text-3xl font-bold poppins-semibold text-color"></h1>
         <div class="grid grid-cols-2 items-center gap-10">
           <div class="flex justify-center items-center relative">
             <img src="{{ pattern }}" alt="" style="height: 300px" />
@@ -296,13 +401,13 @@
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <div class="p-10 bg-bg-main rounded-lg shadow-lg">
-                <span class="text-lg font-bold poppins-semibold">ADAPT</span>
+                <span class="text-lg poppins-bold text-color">ADAPT</span>
               </div>
             </div>
           </div>
 
           <div class="">
-            <p class="my-6 poppins-light text-center">
+            <p class="my-6 poppins-light  text-center text-sm">
               I will adapt more effectively to the workplace environment. This
               will enhance my collaboration and productivity.
             </p>
@@ -312,6 +417,70 @@
     </div>
   </div>
 
+ <!--  -->
+
+ <div class="max-w-screen-xl mx-auto mt-10">
+  <div class="items-center">
+    <div >
+      <div class="flex items-center">
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 mr-4"></div>
+        <h1 class="text-3xl font-bold poppins-bold text-color">Documentation</h1>
+        <div class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"></div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--  -->
+
+
   <div class="my-10">
     <div class="max-w-screen-xl mx-auto flex items-center justify-center">
       <div class="grid grid-cols-2 items-center gap-10">
@@ -320,10 +489,8 @@
         </div>
 
         <div>
-          <h1 class="text-3xl font-bold poppins-semibold">
-            Weekly <span class="text-color">Summary</span>
-          </h1>
-          <p class="my-6 poppins-light">
+          <h1 class="text-3xl font-bold poppins-bold text-color">Summary</h1>
+          <p class="my-6 poppins-light text-sm">
             This week of my OJT was both challenging and rewarding as our team
             started developing NearByTask, a mobile platform for TESDA graduates
             using Flutter and Angular, while I focused on setting up Angular,
