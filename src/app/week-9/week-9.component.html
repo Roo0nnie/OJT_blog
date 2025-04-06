@@ -19,10 +19,10 @@
 <div>
   <div class="max-w-screen-xl mx-auto mt-14">
     <div class="text-3xl mb-3 poppins-bold text-color">
-      Week 8: SECURITY FEATURES
+      Week 9: WORK FROM HOME SET-UP
     </div>
     <div class="flex">
-      <div class="poppins-light uppercase">MARCH 24 - MARCH 28</div>
+      <div class="poppins-light uppercase">MARCH 31 - APRIL 04</div>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
   </div>
@@ -30,29 +30,23 @@
   <div class="max-w-screen-xl flex items-center justify-between mx-auto">
     <div class="grid grid-cols-2 items-center">
       <div>
-        <h1 class="text-3xl mb-3 poppins-bold text-color">Security Issue</h1>
+        <h1 class="text-3xl mb-3 poppins-bold text-color">Access Limitation</h1>
         <p class="my-6 poppins-light text-sm">
-          A security issue was encountered during admin and moderator login due
-          to missing session tokens in HTTP header requests. The Angular
-          configuration lacked a header setter, which initially caused login
-          failures. After troubleshooting, the issue was resolved by
-          implementing a consistent session-based authentication approach across
-          both Flutter and Angular, ensuring secure and seamless login
-          functionality across platforms.
+          Access to core features such as posting and accepting tasks is
+          restricted unless the user's ID and required documents have been
+          verified by the admin. If a user has not uploaded their
+          identification, a "missing information" message will be displayed to
+          notify them. This ensures only authorized users can fully interact
+          with the system and helps maintain security and data integrity.
         </p>
       </div>
       <div class="h-auto max-w-full justify-center flex">
-        <div class="flex justify-center flex-col items-center m-full">
-          <h1 class="text-xl poppins-semibold text-color">
-            Security Issue in Flutter
-          </h1>
-          <img
-            src="{{ SecurityIssue }}"
-            alt=""
-            srcset=""
-            style="height: 500px"
-          />
-        </div>
+        <img
+          src="{{ accessLimitation }}"
+          alt=""
+          srcset=""
+          style="height: 500px"
+        />
       </div>
     </div>
   </div>
@@ -60,24 +54,45 @@
   <!-- Mentors -->
   <div class="max-w-screen-xl mx-auto mb-20">
     <div class="items-center">
-      <div
-        class="grid grid-cols-1 md:grid-cols-1 mt-10 justify-center max-w-5xl mx-auto"
-      >
-        <div class="card shadow-lg flex justify-center items-center">
-          <div class="items-center">
-            <div class="flex flex-col items-center">
-              <div class="flex items-center flex-col">
-                <h1 class="text-xl poppins-semibold text-color">
-                  Security Issue in Angular
-                </h1>
+      <div>
+        <div class="flex items-center">
+          <h1 class="text-3xl font-bold poppins-bold text-color">
+            Update System Backlogs
+          </h1>
+          <div
+            class="flex-grow border-t border-gray-200 dark:border-gray-700 ml-4"
+          ></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-1 mt-10 justify-center max-w-5xl mx-auto"
+        >
+          <div class="card shadow-lg flex justify-center items-center">
+            <div class="items-center">
+              <div class="max-w-full overflow-hidden flex justify-center">
+                <img
+                  src="{{ systemBacklogs }}"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
               </div>
-            </div>
-            <div class="max-w-full overflow-hidden flex justify-center">
-              <img
-                src="{{ angularIssue }}"
-                alt=""
-                class="w-full h-full object-cover"
-              />
+              <div class="py-4 px-8 flex flex-col items-center my-3">
+                <div class="flex items-center flex-col mb-3">
+                  <h1 class="text-xl poppins-semibold text-color">
+                    Full System Backlogs
+                  </h1>
+                  <p>NearByTask Application</p>
+                </div>
+                <p class="poppins-light text-sm text-gray-600 text-center">
+                  System backlogs were updated based on newly created user
+                  stories to track the progress of feature implementation. This
+                  includes identifying tasks that are ready, in progress, in
+                  review and done, ensuring better project management and
+                  workflow organization. Keeping the backlog current allows the
+                  team to prioritize development efforts and remain aligned with
+                  project goals.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -95,53 +110,49 @@
   <div class="max-w-screen-xl flex items-center justify-between mx-auto">
     <div class="grid grid-cols-2 items-center">
       <div class="h-auto max-w-full justify-center flex">
-        <img src="{{ ImageIssue }}" alt="" srcset="" style="height: 500px" />
+        <img src="{{ loginDesign }}" alt="" srcset="" style="height: 500px" />
       </div>
       <div>
-        <h1 class="text-3xl mb-3 poppins-bold text-color">
-          Image Upload Issue (Client/Tasker)
-        </h1>
+        <h1 class="text-3xl mb-3 poppins-bold text-color">Login Design</h1>
         <p class="my-6 poppins-light text-sm">
-          The system faced an error while uploading and fetching user-submitted
-          PDF documents, preventing proper verification status updates. This
-          issue was due to the system's condition not recognizing the PDF file
-          type, which was later addressed by refining the upload validation
-          logic. As a result, users are now properly notified if their profile
-          is incomplete, ensuring smoother profile verification for both clients
-          and taskers.
+          The login system was redesigned to better suit the mobile app
+          environment by removing the email confirmation link, as the system now
+          sends a 6-digit verification code upon login. Upon the user's first
+          successful login, their account status automatically changes from
+          "pending" to "active," simplifying the onboarding process. This update
+          ensures a smoother client registration flow while maintaining a secure
+          and efficient user verification process.
         </p>
       </div>
     </div>
   </div>
   <!-- UI Login -->
 
+  <!-- Discord Meeting -->
   <div class="max-w-screen-xl flex items-center justify-between mx-auto">
     <div class="grid grid-cols-2 items-center">
-      <div>
-        <h1 class="text-3xl mb-3 poppins-bold text-color">
-          Account Validation
-        </h1>
-        <p class="my-6 poppins-light text-sm">
-          The account creation process now includes stricter document
-          validation. Taskers are required to upload a TESDA certificate to
-          verify their qualifications for specific tasks, which must be approved
-          by a moderator. Clients, on the other hand, must submit a valid ID for
-          identification purposes, also subject to moderator approval. This
-          ensures that only authenticated and qualified users can fully access
-          and interact with the mobile app’s core features.
-        </p>
-      </div>
       <div class="h-auto max-w-full justify-center flex">
         <img
-          src="{{ ValidationIssue }}"
+          src="{{ meetingDiscord }}"
           alt=""
           srcset=""
           style="height: 500px"
         />
       </div>
+      <div>
+        <h1 class="text-3xl mb-3 poppins-bold text-color">Discord Meeting</h1>
+        <p class="my-6 poppins-light text-sm">
+          A Discord meeting was held to clarify the development progress and
+          discuss upcoming changes in the system, particularly concerning the
+          tasker account structure. The team agreed to revise the design
+          approach for tasker accounts to improve usability and maintain system
+          consistency. The session provided valuable insights and alignment
+          among team members for smoother collaboration.
+        </p>
+      </div>
     </div>
   </div>
-  <!-- UI Login -->
+  <!-- Discord Meeting -->
 
   <!-- System Design -->
   <div class="max-w-screen-xl mx-auto">
@@ -315,7 +326,7 @@
     <div class="max-w-screen-xl mx-auto flex items-center justify-center">
       <div class="grid grid-cols-2 items-center gap-10">
         <div class="h-auto max-w-full justify-center flex">
-          <img src="{{ SummaryIssue }}" alt="" srcset="" />
+          <img src="{{ meetingDiscord }}" alt="" srcset="" />
         </div>
 
         <div>
@@ -323,17 +334,16 @@
             Summary
           </h1>
           <p class="my-6 poppins-light text-sm">
-            The system encountered and resolved several issues, including a
-            security problem with missing session tokens during admin and
-            moderator login, which was fixed by implementing consistent
-            session-based authentication across both Flutter and Angular. An
-            image upload issue was also addressed by refining the upload
-            validation logic, ensuring users are properly notified if their
-            profile is incomplete. The account creation process has been
-            enhanced with stricter document validation, requiring taskers to
-            submit a TESDA certificate and clients to upload an ID, both subject
-            to moderator approval, ensuring only authenticated users can fully
-            access the system.
+            The system is now approximately 60% complete, with major features
+            like rating, ranking, payment history, reporting, and feedback
+            already finished, and the remaining modules expected to be completed
+            within a month. Key updates include access limitation for unverified
+            users, a redesigned login system optimized for mobile with a 6-digit
+            verification code, and regularly updated backlogs for better project
+            tracking and prioritization. A recent Discord meeting helped align
+            the team on development progress and led to a revised approach for
+            the tasker account structure, ensuring smoother system functionality
+            and user experience moving forward.
           </p>
 
           <div class="flex justify-end">

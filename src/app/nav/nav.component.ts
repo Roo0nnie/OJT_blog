@@ -10,7 +10,17 @@ import { RouterModule, Router } from '@angular/router';
 })
 export class NavComponent {
   navList: string[] = ['HOME', 'ABOUT', 'COMPANY', 'GALLERY', 'WEEK'];
-  weekList: String[] = ['Week-1', 'Week-2', 'Week-3', 'Week-4','Week-5','Week-6', 'Week-7'];
+  weekList: String[] = [
+    'Week-1',
+    'Week-2',
+    'Week-3',
+    'Week-4',
+    'Week-5',
+    'Week-6',
+    'Week-7',
+    'Week-8',
+    'Week-9',
+  ];
   isDropdownOpen = false;
 
   constructor(private router: Router) {}
