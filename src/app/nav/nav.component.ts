@@ -20,6 +20,11 @@ export class NavComponent {
     'Week-7',
     'Week-8',
     'Week-9',
+    'Week-10',
+    'Week-11',
+    'Week-12',
+    'Week-13',
+    'Week-14'
   ];
   isDropdownOpen = false;
 
