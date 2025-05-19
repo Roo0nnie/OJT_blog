@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { PhotoComponent } from "../photo/photo/photo.component";
 
 @Component({
   selector: 'app-week-9',
-  imports: [CommonModule, FooterComponent],
+  imports: [CommonModule, FooterComponent, PhotoComponent],
   templateUrl: './week-9.component.html',
   styleUrl: './week-9.component.css',
 })

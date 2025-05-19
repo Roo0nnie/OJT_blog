@@ -5,10 +5,11 @@ import { FooterComponent } from '../footer/footer.component';
 import { create } from 'domain';
 import { title } from 'process';
 import modules from 'tslib';
+import { PhotoComponent } from "../photo/photo/photo.component";
 
 @Component({
   selector: 'app-week-3',
-  imports: [CommonModule, FooterComponent, ChallengesComponent],
+  imports: [CommonModule, FooterComponent, ChallengesComponent, PhotoComponent],
   templateUrl: './week-3.component.html',
   styleUrl: './week-3.component.css',
 })

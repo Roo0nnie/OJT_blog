@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../footer/footer.component';
-import { Weekly1Component } from '../weekly1/weekly1.component';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { SwiperComponent } from '../page/swiper/swiper.component';
+import { PhotoComponent } from '../photo/photo/photo.component';
 @Component({
   selector: 'app-home',
   imports: [
     CommonModule,
-    FooterComponent,
-    Weekly1Component,
     RouterModule,
     SwiperComponent,
-  ],
+    PhotoComponent,
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
