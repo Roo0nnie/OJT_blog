@@ -11,6 +11,11 @@ import { Week7Component } from './week-7/week-7.component';
 import { Week8Component } from './week-8/week-8.component';
 import { Week5Component } from './week-5/week-5.component';
 import { Week6Component } from './week-6/week-6.component';
+import { Week10Component } from './week-10/week-10.component';
+import { Week11Component } from './week-11/week-11.component';
+import { Week12Component } from './week-12/week-12.component';
+import { Week13Component } from './week-13/week-13.component';
+import { Week14Component } from './week-14/week-14.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,5 +31,10 @@ export const routes: Routes = [
   { path: 'week-7', component: Week7Component },
   { path: 'week-8', component: Week8Component },
   { path: 'week-9', component: Week9Component },
+  { path: 'week-10', component: Week10Component },
+  { path: 'week-11', component: Week11Component },
+  { path: 'week-12', component: Week12Component },
+  { path: 'week-13', component: Week13Component },
+  { path: 'week-14', component: Week14Component },
   { path: '**', redirectTo: 'home' },
 ];

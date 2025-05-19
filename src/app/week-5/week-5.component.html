@@ -1,1 +1,229 @@
-<p>week-5 works!</p>
+<div class="bg-bg-main">
+    <div
+      class="max-w-screen-xl flex items-center justify-evenly mx-auto h-screen"
+    >
+      <div class="">
+        <div
+          class="card max-h-96 overflow-hidden flex justify-center items-center rounded-md mt-10 m-full"
+        >
+          <div class="items-center">
+            <div class="h-auto max-w-full overflow-hidden">
+              <img src="{{ homeBG5 }}" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="max-w-screen-xl mx-auto mt-14">
+    <div class="text-3xl font-bold mb-3 poppins-bold text-color">
+        Week 5: Crud Management
+
+    </div>
+    <div class="font-bold poppins-light">MARCH 03 - MARCH 07</div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  </div>
+  
+  <div class="">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto">
+        <div class="grid grid-cols-2 items-center">
+          <div>
+            <h1 class="text-3xl mb-3 poppins-bold text-color">
+            Introduction
+            </h1>
+            <p class="my-6 poppins-light text-sm">
+                During this week of my On-the-Job Training (OJT), I focused on expanding my technical skills by working on a new module, which involved implementing CRUD (Create, Read, Update, Delete) operations in user management. Additionally, I enhanced the functionality of the Admin Panel with data export features for data analysis. I also optimized search and filtering capabilities for the user management to make sure the admin can filter and search users with the use of terms or words to find specific users. Moreover, I improved my debugging efficiency by fixing errors, and continued to adapt to the dynamic workplace environment in our company.
+            </p>
+          
+          </div>
+          <div class="h-auto max-w-full justify-center flex">
+            <img src="{{ nearByTask }}" alt="" srcset="" style="height: 500px" />
+          </div>
+        </div>
+      </div>
+    <!--  -->
+    <div class="bg-bg-main my-10">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="">
+          <div class="my-10 text-center flex flex-col justify-center">
+            <h1 class="text-3xl font-bold mt-10 poppins-semibold">
+              What I <span class="text-color">Have Done</span>
+            </h1>
+  
+            <div class="h-auto max-w-full justify-center flex">
+              <img src="{{ think }}" alt="" srcset="" style="height: 300px" />
+            </div>
+  
+            <div class="relative">
+              <div class="flex justify-center w-full">
+                <div class="flex flex-col items-center p-6">
+                  <div class="relative">
+                    <div
+                      *ngFor="let event of timeline; let i = index"
+                      class="mb-10"
+                      [ngClass]="{
+                        'ml-10 -mr-96': i % 2 === 0,
+                        'mr-10 -ml-96': i % 2 === 1
+                      }"
+                    >
+                      <!-- Content -->
+                      <div
+                        class="bg-white shadow-md py-6 px-10 rounded-lg max-w-2xl text-center"
+                      >
+                        <p class="text-gray-600 poppins-light">
+                          {{ event.description }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="my-20">
+      <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+        <div class="grid grid-cols-2 items-center gap-10">
+          <div class="h-auto max-w-full justify-center flex">
+            <img
+              src="{{ taskCompleted }}"
+              alt=""
+              srcset=""
+              style="height: 450px"
+            />
+          </div>
+  
+          <div class="">
+            <h1 class="text-3xl font-bold mb-3 poppins-semibold">
+            <span class="text-color">Challenges</span>
+            </h1>
+            <ul class="my-6 poppins-light">
+              <li class="my-4">
+                <span class="text-color">✅</span> Faced difficulties in optimizing search and filtering functions for faster performance. I am having a hard time fixing this feature as I do it manually without using any built in filter feature.
+
+              </li>
+              <li class="my-4">
+                <span class="text-color">✅</span> Data export or user export to PDF format file using npm PDFjs. Iam having a hard time configuring this feature as it's new to me to implement in our Nearbytask application.
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="bg-bg-main">
+    <div
+    class="max-w-screen-xl min-h-96 flex items-center justify-between mx-auto"
+  >
+    <div class="flex flex-col justify-center item my-20">
+      <div class=" ">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+          <div class="grid grid-cols-2 items-center gap-10">
+           
+    
+            <div class="card p-20">
+              <h1 class="text-3xl font-bold mb-3 poppins-semibold">
+               <span class="text-color">Learnings</span>
+              </h1>
+              <ul class="my-6 poppins-light">
+                <li class="my-4">
+                  <span class="text-color">✅</span> Gained a deeper understanding of implementing CRUD operations in user management, enhancing my skills in modular application development.
+                </li>
+                <li class="my-4">
+                  <span class="text-color">✅</span> I learned how to integrate data export features using npm PDFjs for efficient data management.
+
+                </li>
+                <li class="my-4">
+                  <span class="text-color">✅</span> I Improved problem-solving skills by manually optimizing search and filtering functions without using built-in features.
+                  .
+                </li>
+               
+              </ul>
+            </div>
+            <div class="h-auto max-w-full justify-center flex">
+              <img
+                src="{{ target }}"
+                alt=""
+                srcset=""
+                style="height: 450px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <div class="">
+     
+      <div class="my-10">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+          <div class="grid grid-cols-2 items-center gap-10">
+            <div class="h-auto max-w-full justify-center flex">
+              <img src="{{ summary_w4 }}" alt="" srcset="" />
+            </div>
+  
+            <div>
+                <h1 class="text-3xl font-bold poppins-bold text-color">Summary</h1>
+              <p class="my-6 poppins-light">
+                Throughout this week of my OJT, I successfully developed a user management module with CRUD functionality, enhanced the Admin Panel with data export options using npm PDFjs, and improved the search and filtering capabilities for user management. Despite facing challenges in configuring PDF export and optimizing filtering without built-in features, I gained valuable skills and experience that contributed to my technical growth.
+
+              </p>
+  
+              <div class="flex justify-end">
+                <div class="grid grid-cols-2 gap-5">
+                  <button
+                    type="button"
+                    class="relative flex items-center justify-center gap-2 text-color bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 focus:ring-4 focus:ring-blue-300 font-semibold rounded-full text-md px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 19l-7-7 7-7"
+                      />
+                    </svg>
+                    Previous Page
+                  </button>
+                  <button
+                    type="button"
+                    class="relative flex items-center justify-center gap-2 text-color bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 focus:ring-4 focus:ring-blue-300 font-semibold rounded-full text-md px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    Next Page
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

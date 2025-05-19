@@ -1,1 +1,246 @@
-<p>week-13 works!</p>
+<p>week-11 works!</p>
+<div class="bg-bg-main">
+    <div
+      class="max-w-screen-xl flex items-center justify-evenly mx-auto h-screen"
+    >
+      <div class="">
+        <div
+          class="card max-h-96 overflow-hidden flex justify-center items-center rounded-md mt-10 m-full"
+        >
+          <div class="items-center">
+            <div class="h-auto max-w-full overflow-hidden">
+              <img src="{{ homeBG5 }}" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="max-w-screen-xl mx-auto mt-14">
+    <div class="text-3xl font-bold mb-3 poppins-bold text-color">
+        Week 13: Nearbytask Presentation 
+
+    </div>
+    <div class="font-bold poppins-light">APRIL 28 - MAY 02
+
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  </div>
+  
+  <div class="">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto">
+        <div class="grid grid-cols-2 items-center">
+          <div> 
+            <h1 class="text-3xl mb-3 poppins-bold text-color">
+            Introduction
+            </h1>
+            <p class="my-6 poppins-light text-sm">
+                After weeks of developing the Nearbytask system, we presented our real application, which could be used by TESDA graduates to perform tasks and earn income. This  week, we made significant progress by finalizing the application’s design, optimizing its functionality, and ensuring that it aligned with the expectations of our company’s CEO. The team collaborated to refine the system, making it user-friendly, efficient, and ready for deployment.
+            </p>
+            <p class="my-6 poppins-light text-sm">
+                That week was also an opportunity for us to gather recommendations and suggestions for improving our application. Additionally, the most notable event of the week was the release of the OJT interns who would continue their training, with the potential for promotion to regular positions after six months. I was among those selected to continue, providing me with a chance to demonstrate my skills and knowledge while contributing to the company’s growth by assisting in system development.
+
+            </p>
+            <p class="my-6 poppins-light text-sm">
+                As a team leader, I was thrilled to be accepted as an OJT intern and to receive compensation while continuing to learn. This opportunity allowed me to enhance my expertise and contribute to the company’s improvement.
+
+            </p>
+          
+          </div>
+          <div class="h-auto max-w-full justify-center flex">
+            <img src="{{ nearByTask }}" alt="" srcset="" style="height: 500px" />
+          </div>
+        </div>
+      </div>
+    <!--  -->
+    <div class="bg-bg-main my-10">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="">
+          <div class="my-10 text-center flex flex-col justify-center">
+            <h1 class="text-3xl font-bold mt-10 poppins-semibold">
+              What I <span class="text-color">Have Done</span>
+            </h1>
+  
+            <div class="h-auto max-w-full justify-center flex">
+              <img src="{{ think }}" alt="" srcset="" style="height: 300px" />
+            </div>
+  
+            <div class="relative">
+              <div class="flex justify-center w-full">
+                <div class="flex flex-col items-center p-6">
+                  <div class="relative">
+                    <div
+                      *ngFor="let event of timeline; let i = index"
+                      class="mb-10"
+                      [ngClass]="{
+                        'ml-10 -mr-96': i % 2 === 0,
+                        'mr-10 -ml-96': i % 2 === 1
+                      }"
+                    >
+                      <!-- Content -->
+                      <div
+                        class="bg-white shadow-md py-6 px-10 rounded-lg max-w-2xl text-center"
+                      >
+                        <p class="text-gray-600 poppins-light">
+                          {{ event.description }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="my-20">
+      <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+        <div class="grid grid-cols-2 items-center gap-10">
+          <div class="h-auto max-w-full justify-center flex">
+            <img
+              src="{{ taskCompleted }}"
+              alt=""
+              srcset=""
+              style="height: 450px"
+            />
+          </div>
+  
+          <div class="">
+            <h1 class="text-3xl font-bold mb-3 poppins-semibold">
+            <span class="text-color">Challenges</span>
+            </h1>
+            <ul class="my-6 poppins-light">
+              <li class="my-4">
+                <span class="text-color">✅</span> Resolving the logout issue was challenging because it involved identifying the root cause of the problem with Goroute navigation. I carefully replaced it with a widget-based navigation system without disrupting the existing workflow.
+
+              </li>
+              <li class="my-4">
+                <span class="text-color">✅</span> Balancing design updates required a keen understanding of UI/UX principles. I ensured that the new design was visually appealing while maintaining usability and responsiveness.
+
+              </li>
+              <li class="my-4">
+                <span class="text-color">✅</span> Coordinating with team members was a continuous challenge, as I ensured that everyone understood their tasks, stayed on schedule, and effectively communicated any issues encountered.
+
+              </li>
+              
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="bg-bg-main">
+    <div
+    class="max-w-screen-xl min-h-96 flex items-center justify-between mx-auto"
+  >
+    <div class="flex flex-col justify-center item my-20">
+      <div class=" ">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+          <div class="grid grid-cols-2 items-center gap-10">
+           
+    
+            <div class="card p-20">
+              <h1 class="text-3xl font-bold mb-3 poppins-semibold">
+               <span class="text-color">Learnings</span>
+              </h1>
+              <ul class="my-6 poppins-light">
+                <li class="my-4">
+                  <span class="text-color">✅</span> I gained a deeper understanding of UI/UX design principles, particularly in creating a visually appealing yet functional user interface. The transition to widget-based navigation significantly improved my problem-solving skills in app development.
+
+                </li>
+                <li class="my-4">
+                  <span class="text-color">✅</span>I enhanced my team management skills by learning to delegate tasks effectively, provide guidance, and maintain team collaboration even during complex tasks.
+
+                </li>
+                <li class="my-4">
+                  <span class="text-color">✅</span> I developed confidence in presenting a functional application to company executives, effectively gathering their feedback, and making necessary adjustments to improve the application.
+
+                </li>
+            
+              </ul>
+            </div>
+            <div class="h-auto max-w-full justify-center flex">
+              <img
+                src="{{ target }}"
+                alt=""
+                srcset=""
+                style="height: 450px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <div class="">
+     
+      <div class="my-10">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+          <div class="grid grid-cols-2 items-center gap-10">
+            <div class="h-auto max-w-full justify-center flex">
+              <img src="{{ summary_w4 }}" alt="" srcset="" />
+            </div>
+  
+            <div>
+                <h1 class="text-3xl font-bold poppins-bold text-color">Summary</h1>
+              <p class="my-6 poppins-light">
+                This week my OJT experience was a milestone in our project. We successfully presented the Nearbytask system to our CEO, finalized its design, and resolved critical issues that significantly improved user experience. I led the team, demonstrating strong collaboration and technical skills, which contributed to the project's success and readiness for real-world use.
+              </p>
+  
+              <div class="flex justify-end">
+                <div class="grid grid-cols-2 gap-5">
+                  <button
+                    type="button"
+                    class="relative flex items-center justify-center gap-2 text-color bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 focus:ring-4 focus:ring-blue-300 font-semibold rounded-full text-md px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 19l-7-7 7-7"
+                      />
+                    </svg>
+                    Previous Page
+                  </button>
+                  <button
+                    type="button"
+                    class="relative flex items-center justify-center gap-2 text-color bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 focus:ring-4 focus:ring-blue-300 font-semibold rounded-full text-md px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    Next Page
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

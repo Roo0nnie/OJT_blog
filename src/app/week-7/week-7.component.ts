@@ -16,7 +16,7 @@ export class Week7Component {
   introduction = [
     {
       title: 'Introduction',
-      content: ' This week was focused on enhancing user management, particularly in client and tasker roles. I worked on key features such as client registration, email validation, account management, and tasker onboarding. Despite facing technical hurdles, I managed to implement crucial functionalities that improve system efficiency and security.',
+      content: 'This week was focused on enhancing user management, particularly in client and tasker roles. I worked on key features such as client registration, email validation, account management, and tasker onboarding. Despite facing technical hurdles, I managed to implement crucial functionalities that improve system efficiency and security.',
       image: 'assets/svg/introduction_w7.svg'
     },
 
